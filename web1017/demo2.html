@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .box {
+            background-color: #ccc;
+            padding: 5px;
+        }
+
+
+        .box img {
+            /* width: 200px; */
+            /* height: 150px; */
+            /* margin: 5px; */
+            /* vertical-align: top; */
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <ul>
+            <li>
+
+                <img src="./images/18.jpg" alt="">
+
+            </li>
+            <li>
+
+                <img src="./images/22.jpg" alt="">
+
+            </li>
+            <li>
+
+                <img src="./images/23.jpg" alt="">
+
+            </li>
+            <li>
+
+                <img src="./images/26.jpg" alt="">
+
+            </li>
+            <li>
+
+                <img src="./images/25.jpg" alt="">
+
+            </li>
+
+        </ul>
+    </div>
+    <script src="./js/jquery-1.11.3.min.js"></script>
+
+    <script src="./js/jquery.jcarousellite.min.js"></script>
+    <script>
+        $(function () {
+            $(".box").jCarouselLite({
+                auto: 1200,
+                speed: 900,
+                scroll: 1,
+                visible:1,
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lightbox/css/lightbox.css">
+    <style>
+        .box {
+            background-color: #ccc;
+            padding: 5px;
+        }
+
+
+        .box img {
+            width: 200px;
+            height: 150px;
+            margin: 5px;
+            vertical-align: top;
+        }
+
+         
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <ul>
+            <li>
+                <a href="./images/18.jpg" data-lightbox="group">
+                    <img src="./images/18.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./images/22.jpg" data-lightbox="group">
+                    <img src="./images/22.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./images/23.jpg" data-lightbox="group">
+                    <img src="./images/23.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./images/26.jpg" data-lightbox="group">
+                    <img src="./images/26.jpg" alt="">
+                </a>
+            </li>
+            <li>
+                <a href="./images/25.jpg" data-lightbox="group">
+                    <img src="./images/25.jpg" alt="">
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./lightbox/js/lightbox.js"></script>
+    <script src="./js/jquery.jcarousellite.min.js"></script>
+    <script>
+        $(function () {
+            $(".box").jCarouselLite({
+                auto: 1200,
+                speed: 800,
+                scroll: 1,
+                visible: 5,
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>

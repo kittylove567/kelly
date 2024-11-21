@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="./lightbox/css/lightbox.css">
+<style>
+    .wrap {
+        width: 1200px;
+        margin: auto;
+        text-align: center;
+
+    }
+
+    img {
+        width: 300px;
+        text-align: center;
+    }
+    div p{
+        text-align: center;
+    }
+
+    h4 {
+        color: #cccccc;
+    }
+
+    h4 a {
+        color: #999;
+    }
+    h4{
+        text-align: center;
+    }
+
+    box {
+        width: 100%;
+        text-align: center;
+    }
+
+    box ui li img {
+        width: 100%;
+        text-align: center;
+
+    }
+</style>
+
+<body>
+
+
+
+    <div class="wrap">
+        <h1>泰國</h1>
+        <div>
+            <a href="./images/163.jpg" data-lightbox="group" data-title="PHOTO1">
+                <img src="./images/163.jpg" alt="">
+            </a>
+            <a href="./images/164.jpg" data-lightbox="group" data-title="PHOTO2">
+                <img src="./images/164.jpg" alt="">
+            </a>
+            <a href="./images/165.jpg" data-lightbox="group" data-title="PHOTO3">
+                <img src="./images/165.jpg" alt="">
+            </a></div>
+
+    </div>
+    <script src="./js/jquery-1.11.3.min.js"></script>
+    <script src="./lightbox/js/lightbox.js"></script>
+    <div>
+        <p>
+            來一場說走就走的旅行
+        </p>
+    </div>
+    <div class="box">
+        <ul>
+            <li>
+
+                <img src="./images/166.jpg" alt="">
+
+            </li>
+            <li>
+
+                <img src="./images/167.jpg" alt="">
+
+            </li>
+            <li>
+
+                <img src="./images/168.jpg" alt="">
+
+            </li>
+            <li>
+
+                <img src="./images/169.jpg" alt="">
+
+            </li>
+            <li>
+
+                <img src="./images/170.jpg" alt="">
+
+            </li>
+            <li>
+
+                <img src="./images/171.jpg" alt="">
+
+            </li>
+            <li>
+
+                <img src="./images/172.jpg" alt="">
+
+            </li>
+
+        </ul>
+    </div>
+    <script src="./js/jquery-1.11.3.min.js"></script>
+
+    <script src="./js/jquery.jcarousellite.min.js"></script>
+    <script>
+        $(function () {
+            $(".box").jCarouselLite({
+                auto: 1200,
+                speed: 900,
+                scroll: 1,
+                visible: 6,
+            });
+        });
+    </script>
+    <h4>Lightbox2 is licensed under <a href="https://raw.githubusercontent.com/lokesh/lightbox2/master/LICENSE">The MIT License.
+        </a></h4>
+
+</body>
+
+</html>
